@@ -8,10 +8,10 @@
         Title="MainWindow" Height="1000" Width="1600">
     <Grid Background="Black">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="121*"/>
-            <ColumnDefinition Width="1471*"/>
+            <ColumnDefinition Width="125*"/>
+            <ColumnDefinition Width="1467*"/>
         </Grid.ColumnDefinitions>
-        <WebBrowser Name="Map" HorizontalAlignment="Left" Height="969" Margin="79.333,0,0,0" VerticalAlignment="Top" Width="1382" Source="{x:Null}" Grid.Column="1"/>
+        <WebBrowser Name="Map" Margin="79,0,6,0" Source="{x:Null}" Grid.Column="1"/>
         <TextBox x:Name="textbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="199" Margin="0,26,0,0" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Foreground="White">
             <TextBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -28,8 +28,8 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBlock  Foreground="Red" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="61" FontSize="18" FontFamily="Times New Roman" Margin="67,0,0,0" Background="Black" Grid.ColumnSpan="2" Text="Поиск"/>
-        <ListBox x:Name="listbox" HorizontalAlignment="Left" Height="917" Margin="0,52,0,0" VerticalAlignment="Top" Width="200" MouseDoubleClick="listbox_MouseDoubleClick" Grid.ColumnSpan="2">
+        <TextBlock  Foreground="Red" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="61" FontSize="18" FontFamily="Times New Roman" Margin="67,0,0,0" Background="Black" Grid.ColumnSpan="2" Text="Поиск" Height="21"/>
+        <ListBox x:Name="listbox" HorizontalAlignment="Left" Height="917" Margin="0,52,0,0" VerticalAlignment="Top" Width="200" MouseDoubleClick="listbox_MouseDoubleClick" Grid.ColumnSpan="2" Foreground="White">
             <ListBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FFE60000" Offset="0.01"/>
